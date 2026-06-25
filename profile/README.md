@@ -2,7 +2,7 @@ Ducttape infra tools
 ====================
 
 
-Like Dockerfiles, ducttape infra tools describe how to customize a base cloud image, installing packages, configuring services, and enabling systemd units, producing a reusable virtual machine images. Machinefiles are compatible with Podman and Dockerr Containerfiles, so you can create both containers and virtual machines from the same file! It is not meant to replace tools you have, but rather augment, such as Lima. This is also not replacing #bootc, but rather provides you with a similar experience to prepare cloud-init based-images using Containerfiles, but still use a mutable Virtual Machine, ideal for experimentation. 
+Like Dockerfiles, ducttape infra tools describe how to customize a base cloud image, installing packages, configuring services, and enabling systemd units, producing a reusable virtual machine images. Machinefiles are compatible with Podman and Dockerr Containerfiles, so you can create both containers and virtual machines from the same file! It is not meant to replace tools you have, but rather augment, such as Lima. This is also not replacing bootc, but rather provides you with a similar experience to prepare cloud-init based-images using Containerfiles, but still use a mutable Virtual Machine, ideal for experimentation. 
 
 
 ### [Ducttape](https://github.com/ducttape-infra/ducttape)
