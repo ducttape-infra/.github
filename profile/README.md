@@ -33,3 +33,8 @@ RUN dnf install -y httpd && \
     dnf clean all && \
     systemctl enable httpd
 ```
+
+
+### [Integration with Packer](https://github.com/ducttape-infra/packer-machinefile)
+
+The packer-test repository is a technical demonstration and framework for generating virtual machine (VM) disk images using Packer and Machinefile. It implements a Container-to-VM pattern, where system configurations are defined in a shared format and applied to various base distributions during the image creation process
