@@ -9,6 +9,7 @@ Like Dockerfiles, ducttape infra tools describe how to customize a base cloud im
 
 Ducttape is a command-line tool designed to bridge the gap between container-like workflows and virtual machine (VM) management. It allows developers to build, run, and share VM images using a syntax and lifecycle similar to Docker or Podman, powered by the Machinefile format.
 
+`Machinefile`
 ```Dockerfile
 FROM fedora-cloud:44
 
@@ -18,7 +19,7 @@ RUN dnf install -y httpd && \
 ```
 
 ```sh
-ducttape build -t my-httpd -f examples/Machinefile.httpd -d fedora-cloud
+ducttape build -t my-httpd -f Machinefile
 ```
 
 ```sh
