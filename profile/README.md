@@ -23,13 +23,16 @@ ducttape build -t my-httpd -f Machinefile
 ```
 
 ```sh
-ducttape run my-httpd
+ducttape run my-httpd --publish 8080:80
 ```
 
 ```sh
 ducttape shell my-httpd curl -s http://localhost/
 ```
 
+```sh
+curl http://$(ducttape ports my-httpd :80)
+```
 
 ### [Machinefile](https://github.com/ducttape-infra/Machinefile)
 
