@@ -46,6 +46,10 @@ RUN dnf install -y httpd && \
     systemctl enable httpd
 ```
 
+### [Actionfile](https://github.com/ducttape-infra/action.sh)
+
+Runs scriptblocks from run Actionfiles, a Markdown-based configuration file that describes a set of actions, scripts, or tasks for use in automation workflows
+
 
 ### [Integration with Packer](https://github.com/ducttape-infra/packer-machinefile)
 
