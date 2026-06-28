@@ -5,6 +5,7 @@ Ducttape infra tools
 Like Dockerfiles, ducttape infra tools describe how to customize a base cloud image, installing packages, configuring services, and enabling systemd units, producing a reusable virtual machine images. Machinefiles are compatible with Podman and Dockerr Containerfiles, so you can create both containers and virtual machines from the same file! It is not meant to replace tools you have, but rather augment, such as Lima. This is also not replacing bootc, but rather provides you with a similar experience to prepare cloud-init based-images using Containerfiles, but still use a mutable Virtual Machine, ideal for experimentation. 
 
 
+
 ### [Ducttape](https://github.com/ducttape-infra/ducttape)
 
 Ducttape is a command-line tool designed to bridge the gap between container-like workflows and virtual machine (VM) management. It allows developers to build, run, and share VM images using a syntax and lifecycle similar to Docker or Podman, powered by the Machinefile format.
@@ -34,6 +35,7 @@ ducttape shell my-httpd curl -s http://localhost/
 curl http://$(ducttape ports my-httpd :80)
 ```
 
+
 ### [Machinefile](https://github.com/ducttape-infra/Machinefile)
 
 A lightweight execution engine designed to parse and execute Dockerfile or Containerfile instructions directly on a host system. It bridges the gap between container-native configuration formats and traditional host-based automation by treating a host (local or remote) as the target "container."
@@ -46,9 +48,10 @@ RUN dnf install -y httpd && \
     systemctl enable httpd
 ```
 
+
 ### [Actionfile](https://github.com/ducttape-infra/action.sh)
 
-Runs scriptblocks from run Actionfiles, a Markdown-based configuration file that describes a set of actions, scripts, or tasks for use in automation workflows
+An _Actionfile_ is a Markdown-based configuration file that describes a set of actions, scripts, or tasks for use in automation workflows, dotfile management, or application deployment. It is designed for human readability and machine parsing, combining documentation, configuration, and executable code blocks in one file.
 
 
 ### [Integration with Packer](https://github.com/ducttape-infra/packer-machinefile)
