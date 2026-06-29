@@ -58,3 +58,21 @@ An _Actionfile_ is a Markdown-based configuration file that describes a set of a
 ### [Integration with Packer](https://github.com/ducttape-infra/packer-machinefile)
 
 The packer-test repository is a technical demonstration and framework for generating virtual machine (VM) disk images using Packer and Machinefile. It implements a Container-to-VM pattern, where system configurations are defined in a shared format and applied to various base distributions during the image creation process
+
+
+### [GitHub Actions](https://github.com/ducttape-actions/)
+
+There are now actions to setup and deal with
+
+  - shared INI-configuration files from a repository/file
+  - remove unwanted stuff from a runner
+  - install codium server
+  - install VScode as tunnel
+  - setup virtualization (qemu+kvm)
+  - setup container tools (skopeo, etc)
+  - setup ansible
+  - execute jupyter notebpok
+  - enable remote desktop for Windows runner
+  - install Tailscale using authkey
+ 
+and many more.
